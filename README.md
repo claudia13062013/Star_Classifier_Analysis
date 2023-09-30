@@ -75,6 +75,25 @@ Spearman's correlation for 'star':
 - Distribution of redshifts with quasars and redshifts with stars and galaxies:
   ![class_redshift_plot](https://github.com/claudia13062013/Star_Classifier_Analysis/assets/97663507/6ed1929c-d026-47af-93df-763d992a1e0b)
 
+## Bulding ML model :
+File 'ML_model.py' contains a machine learning model that classifie an observation with 98.5% accuracy
+
+- taking all informations from the analysis some columns could be dropped to make a model
+  #df.drop(['obj_ID', 'delta', 'alpha',  'run_ID', 'rerun_ID', 'cam_col', 'field_ID', 'spec_obj_ID', 'fiber_ID']...
+  
+- oversampling was used to make an equal amount of every class
+  ![classes_oversampling](https://github.com/claudia13062013/Star_Classifier_Analysis/assets/97663507/06ebd645-8fac-404d-ac07-27153fa181d3)
+
+
+- the Random Forest Classifier was used to train a model and make an accurate classifier
+
+- test results was made with a conffusion matrix and a cross validation
+
+All test results are located in file 'run.txt'.
+
+
+ 
+
 
 
 
